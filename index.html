@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Image Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>My Image Gallery</h1>
+        <p>Explore Beautiful Moments</p>
+    </header>
+
+    <!-- Filter Buttons -->
+    <div class="filters">
+        <button onclick="filterImages('all')">All</button>
+        <button onclick="filterImages('nature')">Nature</button>
+        <button onclick="filterImages('animals')">Animals</button>
+        <button onclick="filterImages('travel')">Travel</button>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery">
+
+        <div class="gallery-item nature">
+            <img src="images/image12.jpg" alt="Nature">
+        </div>
+
+        <div class="gallery-item animals">
+            <img src="images/image15.jpg" alt="Animal">
+        </div>
+
+        <div class="gallery-item travel">
+            <img src="images/image16.jpg" alt="Travel">
+        </div>
+
+        <div class="gallery-item nature">
+            <img src="images/image13.jpg" alt="Nature">
+        </div>
+
+        <div class="gallery-item animals">
+            <img src="images/image14.jpg" alt="Animal">
+        </div>
+
+        <div class="gallery-item travel">
+            <img src="images/image17.jpg" alt="Travel">
+        </div>
+
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+
+        <span class="close">&times;</span>
+
+        <button class="prev">&#10094;</button>
+
+        <img id="lightbox-img" src="" alt="Large Image">
+
+        <button class="next">&#10095;</button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
